@@ -1,11 +1,11 @@
 {
     "cluster": "dpp",
-    "serviceName": "nginx",
-    "taskDefinition": "arn:aws:ecs:us-east-1:699293280973:task-definition/nginx:10",
+    "serviceName": "docker-2048",
+    "taskDefinition": "arn:aws:ecs:us-east-2:699293280973:task-definition/docker-2048:1",
     "loadBalancers": [
         {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:699293280973:targetgroup/dpp-dpp-default/1edf1be9fe7d6f25",
-            "containerName": "nginx",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:699293280973:targetgroup/dpp-dpp-default/38dbc3ba5d99803f",
+            "containerName": "docker-2048",
             "containerPort": 80
         }
     ],

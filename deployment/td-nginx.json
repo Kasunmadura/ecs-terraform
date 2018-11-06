@@ -1,9 +1,9 @@
 {
-  "family": "nginx",
+  "family": "docker-2048",
   "containerDefinitions": [
     {
-      "name": "nginx",
-      "image": "nginx:alpine",
+      "name": "docker-2048",
+      "image": "alexwhen/docker-2048",
       "memory": 128,
       "portMappings": [
         {
