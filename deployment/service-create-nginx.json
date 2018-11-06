@@ -1,16 +1,16 @@
 {
-    "cluster": "test",
+    "cluster": "dpp",
     "serviceName": "nginx",
-    "taskDefinition": "@@TASKDEFINITION_ARN@@",
+    "taskDefinition": "arn:aws:ecs:us-east-1:699293280973:task-definition/nginx:10",
     "loadBalancers": [
         {
-            "targetGroupArn": "@@TARGET_GROUP_ARN@@",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:699293280973:targetgroup/dpp-dpp-default/1edf1be9fe7d6f25",
             "containerName": "nginx",
             "containerPort": 80
         }
     ],
     "desiredCount": 1,
-    "role": "/ecs/test_ecs_lb_role",
+    "role": "/ecs/dpp_ecs_lb_role",
     "deploymentConfiguration": {
         "maximumPercent": 100,
         "minimumHealthyPercent": 0
